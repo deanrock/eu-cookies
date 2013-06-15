@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>
+	</title>
+	<meta charset='utf-8'> 
+	<style>
+	body{font-family:Arial;font-size:12px;}
+	td {padding:5px;}
+	</style>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
+<body>
+<table id="table"><tr>
+<th></th>
+<th>Spletno mesto</th>
+<th>Št. piškotkov</th>
+<th>Storitve</th>
+<th>Ostali piškotki</th>
+</tr></table>
+<script>
+var data = /* ===HERE COMES DATA=== */;
+
+
+for (x in data) {
+	var c = data[x];
+
+	var s ='';
+
+	for (ss in c['offending']) {
+		var ss2 = c['offending'][ss];
+
+		if(s!='') {
+			s+=', ';
+		}
+
+		s+=ss2;
+	}
+
+	var other = '';
+
+	for (ss in c['other']) {
+		var ss2 = c['other'][ss];
+
+		if(other!='') {
+			other+=', ';
+		}
+
+		other+=ss2;
+	}
+
+	var color = '#aeffb4';
+
+	if(c['cookies'] > 0) {
+		color = '#ffedae';
+	}
+
+	if (s.length > 0) {
+		color = '#ffaeae'
+	}
+
+	$('#table').append('<tr style="background:'+color+'"><td>'+c['id']+'</td><td>'+c['url']+'</td><td>'+c['cookies']+'</td>'+
+		'<td>'+s+'</td><td>'+other+'</td></tr>');
+}
+</script>
+
+
+	</body></html>

@@ -28,7 +28,10 @@ for r in row:
 	mapping = {'__utmz': 'Google Analytics',
 	'__utmc':'Google Analytics',
 	'__utma':'Google Analytics',
-	'__utmb':'Google Analytics'}
+	'__utmb':'Google Analytics',
+	'phpAds_geoInfo': 'OpenX Ads',
+	'phpAds_id': 'OpenX Ads',
+	'__gads':'Google Ads'}
 
 
 	for c in cookies:
@@ -47,6 +50,12 @@ for r in row:
 
 	data.append({'id':i, 'url': url, 'cookies': len(cookies), 'other': tall, 'offending':offending})
 
-f = open('test.json', 'w')
-f.write(json.dumps(data))
+template = open('template.html', 'r')
+
+html = template.read()
+
+html=html.replace('/* ===HERE COMES DATA=== */', json.dumps(data))
+
+f = open('index.html', 'w')
+f.write(html)
 f.close()
