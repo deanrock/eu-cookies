@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>
+	</title>
+	<meta charset='utf-8'> 
+	<style>
+	body{font-family:Arial;font-size:12px;}
+	td {padding:5px;}
+	</style>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
+<body>
+<table id="table"><tr>
+<th></th>
+<th>Spletno mesto</th>
+<th>Št. piškotkov</th>
+<th>Storitve</th>
+<th>Ostali piškotki</th>
+</tr></table>
+<script>
+data = [{"url": "http://www.avto.net", "cookies": 9, "other": ["ogledov", "ShowCookieNote", "__gads", "avto1C0", "avto1C1"], "id": 1, "offending": ["Google Analytics"]}, {"url": "http://24ur.com", "cookies": 10, "other": ["bit_misc", "bit", "bitsession2", "phpAds_geoInfo", "c4d", "phpAds_id"], "id": 2, "offending": ["Google Analytics"]}, {"url": "http://www.bolha.com", "cookies": 8, "other": ["xtvrn", "xtan413864", "xtant413864", "bolha:allow_cookies"], "id": 3, "offending": ["Google Analytics"]}, {"url": "http://www.siol.net", "cookies": 6, "other": ["pslv", "OAX"], "id": 4, "offending": ["Google Analytics"]}, {"url": "http://www.rtvslo.si", "cookies": 4, "other": ["PHPSESSID", "nocache", "RTVcookie", "mobile_app_in_store"], "id": 5, "offending": []}, {"url": "http://www.najdi.si", "cookies": 8, "other": ["JSESSIONID", "poll", "MAdUTCID", "chkcookie"], "id": 6, "offending": ["Google Analytics"]}, {"url": "http://www.zurnal24.si", "cookies": 9, "other": ["fw3k2sitedisplay", "PHPSESSID", "xtvrn", "xtan413867", "xtant413867"], "id": 7, "offending": ["Google Analytics"]}, {"url": "http://www.slovenskenovice.si", "cookies": 1, "other": ["has_js"], "id": 8, "offending": []}, {"url": "http://www.igre123.com", "cookies": 5, "other": ["PHPSESSID"], "id": 9, "offending": ["Google Analytics"]}, {"url": "http://www.finance.si", "cookies": 5, "other": ["dergan"], "id": 10, "offending": ["Google Analytics"]}, {"url": "http://mo\u0161kisvet.com", "cookies": 9, "other": ["c4d", "bit", "bitsession2", "phpAds_geoInfo", "phpAds_id"], "id": 11, "offending": ["Google Analytics"]}, {"url": "http://zadovoljna.si", "cookies": 9, "other": ["c4d", "bit", "bitsession2", "phpAds_geoInfo", "phpAds_id"], "id": 12, "offending": ["Google Analytics"]}, {"url": "http://www.delo.si", "cookies": 1, "other": ["PHPSESSID"], "id": 13, "offending": []}, {"url": "http://www.izklop.com", "cookies": 8, "other": ["PHPSESSID", "izklop_timer_cookie", "fpb_filter", "cc_ineu"], "id": 14, "offending": ["Google Analytics"]}, {"url": "http://www.dnevnik.si", "cookies": 4, "other": [], "id": 15, "offending": ["Google Analytics"]}, {"url": "http://www.zenska.si", "cookies": 0, "other": [], "id": 16, "offending": []}, {"url": "http://www.vecer.com", "cookies": 2, "other": ["ASPSESSIONIDCSQQDBSB", "ASPSESSIONIDCSQTDATA"], "id": 17, "offending": []}, {"url": "http://vizita.si", "cookies": 9, "other": ["c4d", "bit", "bitsession2", "phpAds_geoInfo", "phpAds_id"], "id": 18, "offending": ["Google Analytics"]}, {"url": "http://www.nogomania.com", "cookies": 7, "other": ["Nogomania_Lang_Zone_2", "Nogomania_Lang", "Nogomania_Culture", "ASP.NET_SessionId", "Nogomania_AdminLang", "Nogomania_Lang_Zone_1", "cc_cookie_accept"], "id": 19, "offending": []}, {"url": "http://www.ona-on.com", "cookies": 2, "other": ["JSESSIONID", "PAPVisitorId"], "id": 20, "offending": []}, {"url": "http://www.hudo.com", "cookies": 5, "other": ["PHPSESSID"], "id": 21, "offending": ["Google Analytics"]}, {"url": "http://www.itis.si", "cookies": 5, "other": ["ASP.NET_SessionId"], "id": 22, "offending": ["Google Analytics"]}, {"url": "http://www.bizi.si", "cookies": 7, "other": [".ASPXANONYMOUS", "ASP.NET_SessionId", "__utmv"], "id": 23, "offending": ["Google Analytics"]}, {"url": "http://www.ceneje.si", "cookies": 6, "other": ["ASP.NET_SessionId", "idUsers"], "id": 24, "offending": ["Google Analytics"]}, {"url": "http://voyo.si", "cookies": 9, "other": ["c4d", "bit", "bitsession2", "phpAds_geoInfo", "phpAds_id"], "id": 25, "offending": ["Google Analytics"]}, {"url": "http://www.napovednik.com", "cookies": 6, "other": ["uid", "__gads"], "id": 26, "offending": ["Google Analytics"]}, {"url": "http://bibaleze.si", "cookies": 9, "other": ["c4d", "bit", "bitsession2", "phpAds_geoInfo", "phpAds_id"], "id": 27, "offending": ["Google Analytics"]}, {"url": "http://www.bmwslo.com", "cookies": 6, "other": ["ef2a5c365b5c843ac2cc74695e917d73", "bmwslo_tpl"], "id": 28, "offending": ["Google Analytics"]}, {"url": "http://www.mobitel.si", "cookies": 4, "other": [], "id": 29, "offending": ["Google Analytics"]}, {"url": "http://okusno.je", "cookies": 9, "other": ["c4d", "bit", "bitsession2", "phpAds_geoInfo", "phpAds_id"], "id": 30, "offending": ["Google Analytics"]}, {"url": "http://www.pons.eu", "cookies": 13, "other": ["lang", "dictuser", "_vv", "__asc", "__auc"], "id": 31, "offending": ["Google Analytics"]}, {"url": "http://www.moski.si", "cookies": 0, "other": [], "id": 32, "offending": []}, {"url": "http://www.pozareport.si", "cookies": 3, "other": ["PHPSESSID", "resolution", "_ga"], "id": 33, "offending": []}, {"url": "http://dominvrt.si", "cookies": 9, "other": ["c4d", "bit", "bitsession2", "phpAds_geoInfo", "phpAds_id"], "id": 34, "offending": ["Google Analytics"]}, {"url": "http://www.ringaraja.net", "cookies": 7, "other": ["Ringaraja%5FSLOmembrowser", "ASPSESSIONIDSQSDTDSS", "__gads"], "id": 35, "offending": ["Google Analytics"]}, {"url": "http://www.reporter.si", "cookies": 2, "other": ["has_js", "adp_partner"], "id": 36, "offending": []}, {"url": "http://www.radiokrka.com", "cookies": 6, "other": ["eu%5Fc", "ASPSESSIONIDACCDSCRS"], "id": 37, "offending": ["Google Analytics"]}, {"url": "http://cekin.si", "cookies": 9, "other": ["c4d", "bit", "bitsession2", "phpAds_geoInfo", "phpAds_id"], "id": 38, "offending": ["Google Analytics"]}, {"url": "http://www.sta.si", "cookies": 1, "other": ["stan"], "id": 39, "offending": []}, {"url": "http://www.sobotainfo.com", "cookies": 2, "other": ["PHPSESSID", "__gads"], "id": 40, "offending": []}, {"url": "http://www.govori.se", "cookies": 1, "other": ["@nmusar"], "id": 41, "offending": []}, {"url": "http://www.dijaski.net", "cookies": 8, "other": ["PHPSESSID", "OAID", "cconsent", "_ga"], "id": 42, "offending": ["Google Analytics"]}, {"url": "http://www.slo-zeleznice.si", "cookies": 5, "other": ["PHPSESSID"], "id": 43, "offending": ["Google Analytics"]}, {"url": "http://www.avtomobilizem.com", "cookies": 10, "other": ["PHPSESSID", "phpbb3_kq4vd_u", "phpbb3_kq4vd_k", "phpbb3_kq4vd_sid", "avtomobilizem_last_visit", "bp-activity-oldestpage"], "id": 44, "offending": ["Google Analytics"]}, {"url": "http://www.bicikel.com", "cookies": 5, "other": ["PHPSESSID"], "id": 45, "offending": ["Google Analytics"]}, {"url": "http://www.studentski-servis.com", "cookies": 5, "other": ["PHPSESSID"], "id": 46, "offending": ["Google Analytics"]}, {"url": "http://www.radio1.si", "cookies": 1, "other": ["ASP.NET_SessionId"], "id": 47, "offending": []}, {"url": "http://www.mladina.si", "cookies": 6, "other": ["ASPSESSIONIDCSRCBTAT", "__gads"], "id": 48, "offending": ["Google Analytics"]}, {"url": "http://www.telekom.si", "cookies": 8, "other": ["ASP.NET_SessionId", "BIGipServerwww.telekom.si", "__CT_Data", "WRUID"], "id": 49, "offending": ["Google Analytics"]}, {"url": "http://www.cosmopolitan.si", "cookies": 2, "other": ["csrftoken", "@nmusar"], "id": 50, "offending": []}, {"url": "http://www.playboy.si", "cookies": 1, "other": ["@nmusar"], "id": 51, "offending": []}, {"url": "http://www.kompas.si", "cookies": 5, "other": ["ASPSESSIONIDCCRDSSSR"], "id": 52, "offending": ["Google Analytics"]}, {"url": "http://www.planet-lepote.com", "cookies": 5, "other": ["Planet-Lepote"], "id": 53, "offending": ["Google Analytics"]}, {"url": "http://www.primorske.si", "cookies": 2, "other": ["CMSPreferredCulture", "ASP.NET_SessionId"], "id": 54, "offending": []}, {"url": "http://www.racunovodja.com", "cookies": 6, "other": ["ASPSESSIONIDAQCBTQAQ", "ASP.NET_SessionId"], "id": 55, "offending": ["Google Analytics"]}, {"url": "http://avtoarena.si", "cookies": 5, "other": ["PHPSESSID"], "id": 56, "offending": ["Google Analytics"]}, {"url": "http://www.dolenjskilist.si", "cookies": 5, "other": ["__gads"], "id": 57, "offending": ["Google Analytics"]}, {"url": "http://www.aktivni.si", "cookies": 1, "other": ["@nmusar"], "id": 58, "offending": []}, {"url": "http://www.emka.si", "cookies": 9, "other": ["ASP.NET_SessionId", "GUIDUserInfo", "RatingID", "RatingKey", "decide_cookies"], "id": 59, "offending": ["Google Analytics"]}, {"url": "http://jazkuham.si", "cookies": 8, "other": ["PHPSESSID", "cc_newsletter_timestamp.default", "cc_newsletter_display_countdown.default", "items-per-page"], "id": 60, "offending": ["Google Analytics"]}, {"url": "http://www.viva.si", "cookies": 4, "other": [], "id": 61, "offending": ["Google Analytics"]}, {"url": "http://www.elle.si", "cookies": 1, "other": ["@nmusar"], "id": 62, "offending": []}, {"url": "http://www.avto-magazin.si", "cookies": 1, "other": ["@nmusar"], "id": 63, "offending": []}, {"url": "http://www.strojnistvo.com", "cookies": 8, "other": ["PHPSESSID", "phpbb3_plp6w_u", "phpbb3_plp6w_k", "phpbb3_plp6w_sid"], "id": 64, "offending": ["Google Analytics"]}, {"url": "http://www.eventim.si", "cookies": 2, "other": ["PHPSESSID", "device"], "id": 65, "offending": []}, {"url": "http://www.mediaspeed.net", "cookies": 1, "other": ["PHPSESSID"], "id": 66, "offending": []}, {"url": "http://www.joker.si", "cookies": 8, "other": ["adp_partner", "OABLOCK", "OASCAP", "OAID"], "id": 67, "offending": ["Google Analytics"]}, {"url": "http://www.sensa.si", "cookies": 1, "other": ["@nmusar"], "id": 68, "offending": []}, {"url": "http://www.deloindom.si", "cookies": 1, "other": ["has_js"], "id": 69, "offending": []}, {"url": "http://www.infocity.si", "cookies": 5, "other": ["ASP.NET_SessionId"], "id": 70, "offending": ["Google Analytics"]}, {"url": "http://www.btc-city.com", "cookies": 0, "other": [], "id": 71, "offending": []}, {"url": "http://www.bringler.com", "cookies": 5, "other": ["SESSfd641f4887205eca7c4f8d5bad73f459"], "id": 72, "offending": ["Google Analytics"]}, {"url": "http://www.odisej.net", "cookies": 5, "other": ["PHPSESSID"], "id": 73, "offending": ["Google Analytics"]}, {"url": "http://www.druzina.si", "cookies": 1, "other": ["cartid"], "id": 74, "offending": []}, {"url": "http://www.kapodol.com", "cookies": 5, "other": ["unique"], "id": 75, "offending": ["Google Analytics"]}, {"url": "http://www.mladipodjetnik.si", "cookies": 5, "other": ["serverid"], "id": 76, "offending": ["Google Analytics"]}, {"url": "http://www.zps.si", "cookies": 2, "other": ["8a7528c585644cdec13f137119b8bc7f", "ja_teline_iii_tpl"], "id": 77, "offending": []}, {"url": "http://www.obala.net", "cookies": 7, "other": ["logged_in", "auth_token", "_pobl-web_session"], "id": 78, "offending": ["Google Analytics"]}, {"url": "http://www.gorenjskiglas.si", "cookies": 4, "other": ["PBCSSESSIONID", "Logged_20130615", "s_cc", "s_sq"], "id": 79, "offending": []}, {"url": "http://www.skladi.com", "cookies": 11, "other": ["e356a99323ab44a90b7cf964e5a323f1", "__gads", "cc_necessary", "cc_analytics", "cc_social", "cc_advertising", "dm_tabs_1"], "id": 80, "offending": ["Google Analytics"]}, {"url": "http://golfportal.info", "cookies": 1, "other": ["ASP.NET_SessionId"], "id": 81, "offending": []}, {"url": "http://www.portoroz.si", "cookies": 5, "other": ["ASPSESSIONIDCCBRTBDS"], "id": 82, "offending": ["Google Analytics"]}, {"url": "http://www.polet.si", "cookies": 5, "other": ["has_js"], "id": 83, "offending": ["Google Analytics"]}, {"url": "http://www.mtv.si", "cookies": 4, "other": [], "id": 84, "offending": ["Google Analytics"]}, {"url": "http://www.lifeclass.net", "cookies": 5, "other": ["ASP.NET_SessionId"], "id": 85, "offending": ["Google Analytics"]}, {"url": "http://www.eset.si", "cookies": 1, "other": ["ASPSESSIONIDCCAAADCD"], "id": 86, "offending": []}, {"url": "http://www.itak.si", "cookies": 5, "other": ["ASP.NET_SessionId"], "id": 87, "offending": ["Google Analytics"]}, {"url": "http://www.connect.si", "cookies": 1, "other": ["@nmusar"], "id": 88, "offending": []}, {"url": "http://www.bigpicture.si", "cookies": 7, "other": ["anti-captcha-crc", "adp_partner", "wp_psr"], "id": 89, "offending": ["Google Analytics"]}, {"url": "http://www.monolitmap.si", "cookies": 2, "other": ["PHPSESSID", "ci_session"], "id": 90, "offending": []}];
+
+
+for (x in data) {
+	var c = data[x];
+
+	var s ='';
+
+	for (ss in c['offending']) {
+		var ss2 = c['offending'][ss];
+
+		if(s!='') {
+			s+=', ';
+		}
+
+		s+=ss2;
+	}
+
+	var other = '';
+
+	for (ss in c['other']) {
+		var ss2 = c['other'][ss];
+
+		if(other!='') {
+			other+=', ';
+		}
+
+		other+=ss2;
+	}
+
+	var color = '#aeffb4';
+
+	if(c['cookies'] > 0) {
+		color = '#ffedae';
+	}
+
+	if (s.length > 0) {
+		color = '#ffaeae'
+	}
+
+	$('#table').append('<tr style="background:'+color+'"><td>'+c['id']+'</td><td>'+c['url']+'</td><td>'+c['cookies']+'</td>'+
+		'<td>'+s+'</td><td>'+other+'</td></tr>');
+}
+</script>
+
+
+	</body></html>
